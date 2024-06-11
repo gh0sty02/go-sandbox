@@ -1,0 +1,15 @@
+package data
+
+import (
+	"time"
+)
+
+type Movie struct {
+	ID        int64     `json:"id"`
+	CreatedAt time.Time `json:"-"`
+	Title     string    `json:"title"`
+	Year      int32     `json:"year,omitempty"`
+	Duration  int32     `json:"duration,omitempty,string"`
+	Genres    []string  `json:"genre,omitempty"`
+	Version   int32     `json:"version"`
+}
