@@ -9,7 +9,7 @@ type Movie struct {
 	CreatedAt time.Time `json:"-"`
 	Title     string    `json:"title"`
 	Year      int32     `json:"year,omitempty"`
-	Duration  int32     `json:"duration,omitempty,string"`
+	Duration  Duration  `json:"runtime,omitempty"`
 	Genres    []string  `json:"genre,omitempty"`
 	Version   int32     `json:"version"`
 }
